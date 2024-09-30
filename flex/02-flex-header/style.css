@@ -1,6 +1,11 @@
+
+
 .header  {
   font-family: monospace;
   background: papayawhip;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .logo {
@@ -11,9 +16,21 @@
   padding: 4px 32px;
 }
 
+
+
 ul {
   /* this removes the dots on the list items*/
   list-style-type: none;
+  display: flex;
+  gap: 20px;
+  padding: 32px;
+}
+
+.left-links {
+  justify-self: flex-start;
+}
+.right-links {
+  justify-self: flex-end;
 }
 
 a {
@@ -24,18 +41,8 @@ a {
   text-decoration: none;
 }
 
-/* SOLUTION */
+/* THE SOLUTION IS VERY SIMPLE BUT I DIDNT GET IT RGITH!!!
 
-.header {
-  padding: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-ul {
-  display: flex;
-  margin: 0;
-  padding: 0;
-  gap: 8px;
-}
+I Realised that i dont need to make individual flex to the right and left links becos
+the space in between the header (since the links are listed items) will give enough space that others are 
+just pushed out from the logo*/
