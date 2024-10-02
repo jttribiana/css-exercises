@@ -62,18 +62,26 @@ body {
 
 */
 
+
+body {
+  text-align: center; 
+  /* i got this wrong cos i tot i need to stick using flexbox */
+}
+
+title {
+  margin-bottom: 32px;
+}
+
 .plants {
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  margin-bottom: 32px;
   justify-content: center;
+  gap: 52px;
+}
+
+.info {
+  max-width: 200px;
 }
 
 
-.text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
+/* so sad to report i didnt get this shit right, it was pretty easy based in the solution but my mistake was using flex in the body that made everything niside container so i couldnt center the pictures and texts, so sad but whelp, its the learning that counts, i also realised more about the flexbox and what it can do */
