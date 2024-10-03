@@ -67,3 +67,39 @@ button.cancel {
   border: 1px solid #ddd;
   color: royalblue;
 }
+
+/* SOLUTION */
+
+.modal {
+  padding: 15px;
+}
+
+
+.top {
+  display: flex;
+  flex: column;
+  gap: 15px;
+}
+
+.icon {
+  flex-shrink: 0;
+}
+
+.close-button {
+  flex-shrink: 0;
+}
+
+.icon .close-button {
+  display: flex
+  align-items: center;
+}
+
+
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* my solution is so different from the solutions. i kinda missed where the text sohould hav e overlapped the column of the button so therefore i dont need to move a lot, just the btton, i havent really paid atention to the read me to noticed it, plus my bottom margin in the bottom wasnt present there but im confused why its needed when theres padding */
