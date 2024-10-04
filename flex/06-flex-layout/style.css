@@ -33,20 +33,15 @@ body {
   flex-direction: column;
 }
 
-.header {
+.header,
+.footer {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   padding: 10px;
 }
 
 .footer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: end;
   background-color: #eeeeee;
-  padding: 10px;
 }
 
 .left-links {
@@ -78,3 +73,10 @@ a {
 button {
   padding: 10px;
 }
+
+
+
+/*  not perfect, should have use flex:1 in the content part, 
+should have also added margin and padding of 0 in the ul to make sure extra 
+space wasnt added in the left side which was technically the biggest problem 
+i encountered in this practice */
