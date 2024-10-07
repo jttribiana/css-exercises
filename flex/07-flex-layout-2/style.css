@@ -33,14 +33,17 @@ body {
 body {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-between;   /* shouldnt be included lol */
+
 }
+
+
 
 .header {
   display: flex;
   font-size: 32px;
   font-weight: 900;
-  padding-left: 16px;
+  padding-left: 16px;   /* could also be   padding: 0 16px; */
   align-items: center;
 }
 
@@ -52,7 +55,7 @@ body {
 
 
 .sidebar {
-  width: 300px;
+ width: 300px;  /* this is for the cards */
   flex-shrink: 0;
   padding: 16px;
 }
@@ -70,4 +73,51 @@ a {
 
 }
 
+/* should have been
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+li {
+  margin-bottom: 16px;
+} 
+
+*/
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+}
   
+.cards {
+  display: flex;
+  flex-grow: 1;
+  flex-basis: auto
+}
+
+/* the right solution 
+.body {
+  flex: 1;
+  display: flex;
+}
+*/
+
+/* should have been 
+
+.card {
+  padding: 16px;
+  width: 300px;
+} */
+
+
+/* lol, i give up, i cant figure out the content parts */
